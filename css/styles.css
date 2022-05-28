@@ -59,15 +59,19 @@ header {
   text-align: center;
 }
 
+.pf {
+  background-color: #ECEFF1
+}
+
 .pf-container {
   width: 920px;
   margin: 0 auto;
+  padding: 90px 0;
 }
 
 .content-title {
   font-size: 32px;
   color: #000000;
-  margin-top: 90px;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -90,7 +94,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 90px;
 }
 
 .pf-content-img:nth-child(1),
@@ -135,4 +138,41 @@ header {
   height: 250px;
   background-image: url(../img/webcamp-mother.png);
   background-size: cover;
+}
+
+.feature-container {
+  width: 980px;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+
+.feature-content {
+  display: flex;
+}
+
+.feature-item {
+  width: 320px;
+  height: auto;
+}
+
+.feature-item:nth-child(1),
+.feature-item:nth-child(2) {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 60px;
+  text-align: center;
+}
+
+.feature-item-title {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #000000;
 }
