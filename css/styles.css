@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70px;
+  background-color: #EC715F;
+}
+
+.menu-bar {
+  width: 1024px;
+  margin: 0 auto;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hp-logo {
+  height: 70px;
+}
+
+.menu {
+  list-style: none;
+  font-size: 0;
+  width: auto;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.menu-item a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
