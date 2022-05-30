@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>WALS成果物</title>
 
     <script src="https://kit.fontawesome.com/dca5024b35.js" crossorigin="anonymous"></script>
@@ -20,7 +21,28 @@
           </ul>
         </nav>
       </div>
+
+      <div id="sp-menu">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
     </header>
+
+    <div class="overlay">
+      <nav>
+        <ul>
+          <li><a href="#pf">Portfolio</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button id="back">≫</button>
 
     <main>
       <div id="main" class="main-visual">
@@ -58,7 +80,6 @@
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
           <div class="feature-content">
-
             <div class="feature-item">
               <div class="icon">
                 <i class="fa-solid fa-display"></i>
@@ -183,5 +204,7 @@
     <footer>
       <p>©2017 WebCamp</p>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

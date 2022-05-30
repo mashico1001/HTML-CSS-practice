@@ -99,48 +99,37 @@ header {
   justify-content: space-between;
 }
 
+.pf-content-img {
+  width: 300px;
+  height: 250px;
+  background-position: center center;
+  background-size: cover;
+}
+
 .pf-content-img:nth-child(1),
 .pf-content-img:nth-child(3) {
   margin-bottom: 10px;
 }
 
-
 .pf-content-img:nth-child(1) {
-  width: 300px;
-  height: 250px;
   background-image: url(../img/sketch.jpg);
-  background-size: cover;
 }
 
 .pf-content-img:nth-child(2) {
-  width: 300px;
-  height: 250px;
   background-image: url(../img/websuku.png);
-  background-size: cover;
 }
+
 .pf-content-img:nth-child(3) {
-  width: 300px;
-  height: 250px;
   background-image: url(../img/write.jpg);
-  background-size: cover;
 }
 .pf-content-img:nth-child(4) {
-  width: 300px;
-  height: 250px;
   background-image: url(../img/webcamp.png);
-  background-size: cover;
 }
 .pf-content-img:nth-child(5) {
-  width: 300px;
-  height: 250px;
   background-image: url(../img/talk.jpg);
-  background-size: cover;
 }
 .pf-content-img:nth-child(6) {
-  width: 300px;
-  height: 250px;
   background-image: url(../img/webcamp-mother.png);
-  background-size: cover;
 }
 
 .feature-container {
@@ -263,3 +252,201 @@ footer p {
   line-height: 60px;
 }
 
+.overlay {
+  display: none;
+}
+
+#back {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  color: #FFF;
+  font-size: 32px;
+  background-color: #9E9E9E;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+
+@media screen and (max-width:768px) {
+
+  header {
+    height: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #sp-menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 10;
+  }
+
+  .menu-trigger,
+  .menu-trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+  }
+
+  .menu-trigger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+  }
+
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+  }
+
+  .menu-trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-trigger span:nth-child(2) {
+    top: 13px;
+  }
+
+  .menu-trigger span:nth-child(3) {
+    bottom: 0;
+  }
+
+  .menu-trigger.active span:nth-child(1) {
+    -webkit-transform: translateY(14px) rotate(-45deg);
+    transform: translateY(14px) rotate(-45deg);
+    background-color: #000;
+  }
+
+  .menu-trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-trigger.active span:nth-child(3) {
+    -webkit-transform: translateY(-14px) rotate(45deg);
+    transform: translateY(-14px) rotate(45deg);
+    background-color: #000;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .overlay ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay li {
+    margin-top: 24px;
+  }
+
+  .overlay li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .menu-bar {
+    width: 90%;
+    line-height: 50px;
+  }
+
+  .hp-logo {
+    height: 50px;
+  }
+
+  .main-visual {
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/code.png);
+    background-size: cover;
+  }
+
+  .title-h1 {
+    font-size: 40px;
+  }
+
+  .title-p {
+    font-size: 18px;
+  }
+
+  .pf-container,
+  .feature-container,
+  .profile-container,
+  .contact-container {
+    width: 90%;
+  }
+
+  .pf-content,
+  .feature-content,
+  .profile-content,
+  .contact-content {
+    display: block;
+  }
+
+  .pf-content-img:nth-child(2n+1) {
+    display: none;
+  }
+
+  .pf-content-img {
+    margin: 0 auto;
+  }
+
+  .feature-item:nth-child(1),
+  .feature-item:nth-child(2),
+  .feature-item:nth-child(3) {
+    margin: 0 auto;
+  }
+
+  .feature-item:nth-child(1),
+  .feature-item:nth-child(2) {
+    padding-bottom: 10px;
+  }
+
+  .profile-img {
+    margin: 0 auto 20px auto;
+  }
+
+  .profile-content-item {
+    text-align: center;
+  }
+
+  .contact-content-item {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer {
+    height: 60px;
+  }
+}
